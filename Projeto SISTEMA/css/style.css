@@ -1,0 +1,155 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body{
+     background-color: #CDB699;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+ }
+ 
+ /* BARRA SUPERIOR */
+ .barra-superior{
+    background-color: #2EB086;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    border-bottom:#B8405E solid;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    cursor: pointer;
+  
+
+
+    /*margin-bottom: 5px;
+    /*
+    margin-left: 5px;
+    color: #313552;
+    font-family: 'Arial Black', Times;
+    */
+   
+}
+
+.logotext{
+    border:none;  
+    position: absolute ;
+    top: 31%;
+    text-decoration: none;
+    color: #313552;
+    cursor: pointer;
+}
+ 
+
+
+nav a{
+    border:none;
+    cursor: pointer;
+    transition: .3s ease all;
+    padding:10px 20px;
+    margin-right: 5px;
+    text-decoration:none;
+    color:#313552;
+    margin-right: 10px;
+
+}
+
+nav a:hover{
+    background-color:#B8405E;
+    color:#EEE6CE;
+}
+
+.container{
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #2EB086;
+    margin: 20px;
+    border: 1px solid #B8405E;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img{
+    transition: 0.5s;
+    width: 50px;
+    height: 50px;
+}
+
+.container .card h1{
+    font-size: 2rem;
+    color: #313552;
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .content p{
+    color: #B8405E;
+    transition: 00.5s;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #313552;
+    color: #CDB699;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 00.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .card:hover{
+    background-color: #313552;
+    color: #B8405E;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #313552;
+    border-color: #B8405E;
+}
+
+.container .card:hover h1{
+    color: #B8405E;
+}
+
+.container .card:hover img{
+    filter: invert(1);
+}
+
+.container .card:hover .content p{
+    color: #CDB699;
+}
+
+.container .card:hover .content a{
+    color: #313552;
+    background-color: #CDB699;
+}
